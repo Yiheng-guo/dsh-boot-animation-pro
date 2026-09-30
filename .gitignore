@@ -7,3 +7,6 @@ boot.mp4.original-backup
 
 # 构建日志
 build-log.txt
+
+# 录制的宣传视频：本地素材，不进仓库
+promo/

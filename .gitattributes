@@ -1,0 +1,12 @@
+# media/ 只是生成 lib/clips.data.js 的输入，而 clips.data.js 已经提交了。
+#
+# 归档（GitHub 的 tarball / zipball —— `pnpm add github:…` 下载的正是它）
+# 因此跳过这 8.7MB：安装体积从约 19MB 降到约 10MB。在慢网络上，这个差别就是
+# 「装上了」和「放弃了」的区别。
+#
+# 注意必须是 media/** 而不是 media/ —— gitattributes 不像 gitignore 那样
+# 把目录模式递归应用到内容上，写成 media/ 会静默地什么都不排除。
+#
+# `git clone` 拿到的仍然是完整仓库；只有归档会省略。
+# 需要把文件还原出来时跑 `npm run extract-clips`（从内嵌数据反解，逐字节一致）。
+media/** export-ignore

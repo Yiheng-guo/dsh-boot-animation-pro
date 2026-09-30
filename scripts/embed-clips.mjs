@@ -3,13 +3,10 @@ import { createHash } from "node:crypto"
 import { join, dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
+// The id/name/file mapping is shared with extract-clips.mjs.
+import { CLIP_SOURCES as CLIPS } from "./lib/clips-manifest.mjs"
+
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..")
-const CLIPS = [
-  { id: "brand", file: "media/deepseek-brand-intro.mp4", name: "DeepSeek 品牌片头" },
-  { id: "cyberpunk", file: "media/deepseek-cyberpunk-intro.mp4", name: "DeepSeek 赛博朋克片头" },
-  { id: "awakening", file: "media/deepseek-awakening-intro.mp4", name: "DeepSeek 数字角色苏醒" },
-  { id: "startup", file: "media/deepseek-startup-intro.mp4", name: "DeepSeek 启动问题" },
-]
 
 // faststart: moov must sit before mdat, or the browser waits for the whole file.
 const hasFaststart = (buf) => {

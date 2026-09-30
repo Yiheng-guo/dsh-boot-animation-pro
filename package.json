@@ -61,6 +61,7 @@
     "build": "node scripts/build.mjs",
     "build:client": "node scripts/check-css-template.mjs && tsdown",
     "embed-clips": "node scripts/embed-clips.mjs",
+    "extract-clips": "node scripts/extract-clips.mjs",
     "dsh:link": "node scripts/dsh-link.mjs",
     "dsh:unlink": "node scripts/dsh-link.mjs --remove",
     "typecheck": "tsc --noEmit -p tsconfig.json",
