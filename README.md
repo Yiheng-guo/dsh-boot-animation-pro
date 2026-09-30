@@ -6,6 +6,16 @@
 > 增加播放控制、触发规则、片库管理、画面特效、分时段片头和中英双语界面。
 > 出处、许可与差异见 **[FORK.md](FORK.md)**。English: [README.en.md](README.en.md)
 
+**如果你用上了，点个 ⭐ Star 让我知道有人在用** —— 这是这个项目唯一想要的回报。
+
+一条命令安装（复制即用）：
+
+```sh
+dsh plugin --profile web add github:Yiheng-guo/dsh-boot-animation-pro
+```
+
+> 桌面版 App 把 `web` 换成 `desktop`。装完**完全退出 DSH 再重开**才生效。
+
 ## 装好之后长什么样
 
 | | |
@@ -143,7 +153,14 @@ DSH 的客户端 bundle 响应带 `cache-control: max-age=31536000, immutable`�
 npm run check          # 全部闸门：typecheck + 22 个套件，约 570 条断言
 npm run build          # 重新构建 lib/
 npm run verify:letterbox   # 用真实浏览器量黑边（需要 Chrome/Edge/Chromium）
+
+npm run extract-clips  # 从 lib/clips.data.js 反解回 media/*.mp4（带 sha256 校验）
 ```
+
+> **`media/` 不在源码归档里。** 它只是生成 `lib/clips.data.js` 的输入，而后者已经提交了。
+> 归档（也就是 `pnpm add github:…` 下载的东西）因此从 19MB 降到 9.5MB——在慢网络上这是
+> 「装上了」和「放弃了」的差别。`git clone` 拿到的是完整仓库，不受影响。
+> 从归档开始工作的人跑一次 `npm run extract-clips` 就能把文件还原出来，逐字节一致。
 
 改代码前请先读 **[ARCHITECTURE.md](ARCHITECTURE.md)** 末尾的**不变量清单**。
 其中三条是硬约束，违反了会直接把 GUI 弄挂或造成数据丢失。
