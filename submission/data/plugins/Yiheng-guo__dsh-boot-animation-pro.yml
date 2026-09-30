@@ -1,0 +1,6 @@
+url: https://github.com/Yiheng-guo/dsh-boot-animation-pro
+name: Yiheng-guo/dsh-boot-animation-pro
+category: ui
+description:
+  en: 'An enhanced fork of dsh-boot-animation: a full-frame intro video with playback controls (volume, speed, progress bar, auto-skip countdown, fade-out), five trigger rules plus a cooldown and a per-session allow/deny list, time-of-day clips by weekday, library management (rename, favourite, sort, delete), overlay captions and effects, and a Chinese/English UI. Four clips ship embedded in code; bring your own any time.'
+  zh: 'dsh-boot-animation 的增强二开版：铺满窗口的片头动画，带播放控制（音量/倍速/进度条/倒计时自动跳过/片尾淡出）、五种触发时机 + 冷却时间 + 会话名单、按星期和时段自动换片头、片库管理（改名/收藏/排序/删除）、叠加文字与画面特效，以及中英双语界面。自带四段内嵌片头，也能随时换成你自己的片子。'

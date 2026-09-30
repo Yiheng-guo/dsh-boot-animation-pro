@@ -1,0 +1,19 @@
+{
+  "builtAt": "2026-09-30T12:14:47.602Z",
+  "host": [
+    "clip-id.js",
+    "clip-registry.js",
+    "clip-resolver.js",
+    "diagnostics.js",
+    "errors.js",
+    "index.js",
+    "library-ops.js",
+    "media-server.js",
+    "random-controller.js",
+    "route-guard.js",
+    "schedule.js",
+    "selection-store.js",
+    "settings.js"
+  ],
+  "clientBundleBytes": 101464
+}
