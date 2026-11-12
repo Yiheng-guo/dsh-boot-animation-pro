@@ -25,6 +25,7 @@ dsh plugin --profile web add github:Yiheng-guo/dsh-boot-animation-pro
 
 上面两张是**真实浏览器渲染实测截图**（Headless Chrome 2560×1313 视口，1280×720 片源，
 `scripts/verify-letterbox.mjs` 测量）：铺满模式黑边 0px，完整显示模式左右各 113px。
+<img src="docs/preview.gif" width="720" alt="开机动画运行实拍：视频铺满窗口，「DeepSeek」大字与角色画面">
 
 ## 安装
 
