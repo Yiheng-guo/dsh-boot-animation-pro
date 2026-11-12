@@ -19,6 +19,7 @@ new conversation, or enter the conversation you pinned.
 Both are **real browser measurements**, not mockups — Headless Chrome at a
 2560×1313 viewport with a 1280×720 clip, read back by `scripts/verify-letterbox.mjs`:
 fill mode leaves 0px of black, whole-frame mode leaves 113px on each side.
+<img src="docs/preview.gif" width="720" alt="Boot animation in real use: the clip fills the window, DeepSeek title and character frames visible">
 
 ## Install
 
